@@ -35,13 +35,13 @@ The first process generates a 'file info' csv file containing information about 
 This process uses the fileInfo.csv as input to generate arguments needed to run the image processing. The output is a csv file with the following fields:
 
  - Image locations (ch1 = nuclear image path for HTS data)
- - Overwrite (True or False)
+ - Overwrite existing output files (True or False)
  - Plate ID
  - Regional properties (True or False) 
  - Path to save segmentation output
  - Well
 ### improc
-This process handles the image processing. The task arguments are used as input to the Celery workers running the image processing jobs. The output of this process are the segmented image masks and the cell counts of each image in individual csv files.
+This process handles the image processing. The task arguments are used as input to the Celery workers running the image processing jobs. The outputs of this process are the segmented image masks and the cell counts of each image in individual csv files.
 ### get_cellcounts
 The final process compiles all of the computed cell counts into one csv file. 
 
