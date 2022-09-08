@@ -1,3 +1,9 @@
+'''
+@author: Sarah Groves
+
+Adapted from: https://github.com/smgroves/Groves-CellSys2021/tree/main/mazebox
+'''
+
 import dropkick as dk
 import scvelo as scv
 import scanpy as sc
