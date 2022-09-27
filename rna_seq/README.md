@@ -6,7 +6,7 @@ for additional information.
 Use the `env.yml` follow to create a conda environment named `rna_seq` (name can be changed by editing the first line of the file). 
 ```bash
 conda env create -f env.yml
-conda activate rna_seq
+conda activate scrnaseq
 ```
 
 Clone the `dropkick` repository
@@ -37,7 +37,7 @@ python setup.py install
 Finally, manually install `glmnet` package and create Jupyter kernel
 ```bash
 conda install -c conda-forge glmnet
-ipython kernel install --user --name=rna_seq
+ipython kernel install --user --name=scrnaseq
 ```
 
 
