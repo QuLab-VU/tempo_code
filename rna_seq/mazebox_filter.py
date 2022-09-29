@@ -149,10 +149,10 @@ def dropkick_recipe(
     adata.X = adata.layers[X_final].copy()
 
     scv.tl.score_genes_cell_cycle(adata)
-    if n_hvgs is not None:
-        sc.tl.pca(adata, n_comps=n_comps, use_highly_variable=True)
-    else:
-        sc.tl.pca(adata, n_comps=n_comps, use_highly_variable=False)
+#     if n_hvgs is not None:
+#         sc.tl.pca(adata, n_comps=n_comps, use_highly_variable=True)
+#     else:
+#         sc.tl.pca(adata, n_comps=n_comps, use_highly_variable=False)
 
     # if plot:
     #     sc.pl.pca(adata, color=[ "pct_counts_mito", "phase", batch_key])
