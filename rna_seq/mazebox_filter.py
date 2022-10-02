@@ -8,8 +8,8 @@ import scrublet
 import matplotlib.pyplot as plt
 
 
-def dropkick_filter(adata, filter=True, verbose=False, plot=True):
-    adata_rc = dk.dropkick(adata, n_jobs=4, verbose=verbose)
+def dropkick_filter(adata, filter=True, verbose=False, plot=True, n_jobs=20):
+    adata_rc = dk.dropkick(adata, n_jobs=n_jobs, verbose=verbose)
     if plot:
         dk.qc_summary(adata)
     if filter:
